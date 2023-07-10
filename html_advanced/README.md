@@ -74,3 +74,29 @@ When you open your page on browser the page is blank
 </head>
 ```
 
+3. Simple header, main, footer
+### Header
+- Creat header in body tag
+```
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+</body>
+```
+- Creat main after the header
+```
+<body>
+    <main>
+        <p>Main content</p>
+    </main>
+</body>
+```
+- Creat footer tag after the main
+```
+<body>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+```
