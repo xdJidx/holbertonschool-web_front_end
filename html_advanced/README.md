@@ -117,3 +117,17 @@ When you open your page on browser the page is blank
     <section>Contact section</section>
 </main>
 ```
+
+6. Work, News, Testimonial articles
+## Work articles
+- Add 3 article tags in inside the section Works section
+```
+<section>
+    Works section
+    <article>Work 1</article>
+    <article>Work 2</article>
+    <article>Work 3</article>
+</section>
+```
+Same for author section
+
