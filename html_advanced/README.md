@@ -274,3 +274,22 @@ Same for author section
 </div>
 ```
 
+20. Add links
+- Create an anchor
+```
+<a href="#services">Services</a>
+```
+
+21. Add social media links
+- Creat link Facebook, Twitter, Instagram
+```
+<a href="https://www.facebook.com/HolbertonSchool/">Facebook</a>
+<a href="https://twitter.com/holbertonschool">Twitter</a>
+<a href="https://www.instagram.com/holbertonschool/">Inst</a>
+```
+
+22. "Button" links
+- Creat link button on text :
+```
+<a href="contact.html">Get in touch</a>
+```
