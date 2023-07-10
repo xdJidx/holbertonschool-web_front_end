@@ -79,24 +79,18 @@ When you open your page on browser the page is blank
 - Creat header in body tag
 ```
 <body>
-    <header>
-        <h1>Header</h1>
-    </header>
+    <header>Header</header>
 </body>
 ```
 - Creat main after the header
 ```
 <body>
-    <main>
-        <p>Main content</p>
-    </main>
+    <main>Main content</main>
 </body>
 ```
 - Creat footer tag after the main
 ```
 <body>
-    <footer>
-        <p>Footer</p>
-    </footer>
+    <footer>Footer</footer>
 </body>
 ```
