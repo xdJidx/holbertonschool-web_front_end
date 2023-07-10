@@ -131,3 +131,12 @@ When you open your page on browser the page is blank
 ```
 Same for author section
 
+7. Navigation
+- Create the nav tag inside the header tag
+```
+<body>
+    <header>
+        <nav></nav>
+    </header>
+</body>
+```
