@@ -148,3 +148,11 @@ Same for author section
     <h1>Homepage</h1>
 </main>
 ```
+
+9. Level 2 headings
+- Add h2 in your section title
+```
+<section>
+        <h2>Contact</h2>
+</section>
+```
