@@ -185,3 +185,18 @@ Same for author section
     </section>
 </main>
 ```
+
+12. Paragraphs
+- Add paragraphs with <p></p>
+```
+<main>
+    <section>
+        <h2>Contact</h2>
+        <p>We like to know new people</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Id Sextilius factum negabat. Quo tandem modo?
+          At eum nihili facit; Quae contraria sunt his, malane?</p>
+    </section>
+</main>
+```
+
