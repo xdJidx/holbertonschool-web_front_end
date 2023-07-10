@@ -218,3 +218,24 @@ Same for author section
 </section>
 ```
 
+14. Span
+- Add span before nav
+```
+<body>
+    <header>
+        <span>Techium</span>
+        <nav></nav>
+    </header>
+</body>
+```
+
+15. Div
+- Add div for Wrap the contents
+```
+<body>
+    <div>
+        <footer>Footer</footer>
+    </div>
+</body>
+```
+
