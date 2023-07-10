@@ -266,3 +266,11 @@ Same for author section
 <!-- Services section -->
 ```
 
+18. link your logo
+- Wrap the span with a link <a></a> in the root with "/"
+```
+ <div>
+    <a href="/"><span>Techium</span></a>
+</div>
+```
+
