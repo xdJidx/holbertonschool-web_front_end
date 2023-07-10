@@ -239,3 +239,30 @@ Same for author section
 </body>
 ```
 
+16. Structure your sections
+- Add div in div 
+```
+<section>
+    <div>
+        <header>
+            <h2>Services</h2>
+            <p>We work with you</p>
+        </header>
+        <div>
+            <h3>Design & Concept</h3>
+            <h3>Digital Strategy</h3>
+            <h3>Content Strategy</h3>
+            <h3>UX Design</h3>
+            <h3>Web Development</h3>
+            <h3>Social Media</h3>
+        </div>
+    </div>
+</section>
+```
+
+17. Comments
+- Add comments to help scanning code. Use :
+```
+<!-- Services section -->
+```
+
