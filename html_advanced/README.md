@@ -94,3 +94,26 @@ When you open your page on browser the page is blank
     <footer>Footer</footer>
 </body>
 ```
+
+4. Aside
+- Add aside in main tags
+```
+<main>
+    Main content
+    <aside>Aside</aside>
+</main>
+```
+
+5. Section
+- Add section in your main tags
+```
+<main>
+    <section>Hero section</section>
+    <section>Services section</section>
+    <section>Works section</section>
+    <section>About section</section>
+    <section>Latest news section</section>
+    <section>Testimonials section</section>
+    <section>Contact section</section>
+</main>
+```
