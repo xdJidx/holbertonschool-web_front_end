@@ -21,3 +21,16 @@
 
 When you open your page on browser the page is blank
 
+1. Structure your webpage
+- Add in html tags head and body tags
+```
+<html>
+
+<head>
+</head>
+
+<body>
+</body>
+
+</html>
+```
