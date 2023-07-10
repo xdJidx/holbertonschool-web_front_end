@@ -156,3 +156,14 @@ Same for author section
         <h2>Contact</h2>
 </section>
 ```
+
+10. Level 3 headings
+- Add h3 in section
+```
+<section>
+    <h2>About Us</h2>
+    <h3>Who are we</h3>
+    <h3>Our culture</h3>
+    <h3>How we work</h3>
+</section>
+```
