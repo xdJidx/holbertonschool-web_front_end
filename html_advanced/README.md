@@ -140,3 +140,11 @@ Same for author section
     </header>
 </body>
 ```
+
+8. Level 1 headings
+- Create lvl 1 heading inside main before sections
+```
+<main>
+    <h1>Homepage</h1>
+</main>
+```
