@@ -308,3 +308,17 @@ Same for author section
     <li><a href="https://www.instagram.com/holbertonschool/">Instagram</a></li>
 </ul>
 ```
+
+25. Secondary navigation menu
+- Create new div in div
+```
+<div>
+    <div>
+        <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</div>
+```
