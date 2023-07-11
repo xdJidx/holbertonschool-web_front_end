@@ -407,3 +407,14 @@ Same for author section
     </blockquote>
 </div>
 ```
+
+31. Address and latest news authors
+- Add an address.
+```
+<address>234 Washington Street (line-break) Urbana, Illinois</address>
+```
+
+- Add an name in small.
+```
+<small>By Frances J.</small>
+```
