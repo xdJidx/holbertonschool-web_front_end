@@ -460,3 +460,15 @@ Same for author section
     </tbody>
 </table>
 ```
+
+34. Details
+- Add détails and summary
+```
+<div>
+    <h3>Open</h3>
+    <details>
+        <summary>Always open</summary>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </details>
+</div>
+```
