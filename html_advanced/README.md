@@ -374,3 +374,16 @@ Same for author section
     <hr>
 </div>
 ```
+
+29. Client quotes
+- Create bloquenote and cite author.
+```
+<article>
+    <blockquote>
+        <p>
+            I love your system. Definitely worth the investment. I'd be lost without Techium company.
+        </p>
+        <cite>Sven H.</cite>
+    </blockquote>
+</article>
+```
