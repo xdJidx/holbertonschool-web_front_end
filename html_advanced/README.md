@@ -478,3 +478,18 @@ Same for author section
 ```
 <a href="/"><img src="logo-black.png" alt="Techium logo" width="160" height="40"></a>
 ```
+
+36. Add images to your sections
+- Add image in repositori
+```
+<div>
+    <img src="images/pic-blog-02.jpg" alt="" width="305" height="205">
+</div>
+```
+
+- Add profil picture with dimension
+```
+<div>
+    <img src="images/pic-person-03.jpg" alt="Sven H. avatar" width="100px" height="100px">
+</div>
+```
