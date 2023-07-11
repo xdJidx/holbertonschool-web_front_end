@@ -424,3 +424,39 @@ Same for author section
 ```
 <mark>highlighted</mark>
 ```
+
+33. Table
+- Create table title and head
+```
+<table>
+    <caption>Title</caption>
+    <thead>
+        <tr>
+            <th scope="col">Name categorie 1</th>
+            <th scope="col">Name categorie 2</th>
+        </tr>
+    </thead>
+</table>
+```
+- Add body Table
+```
+<table>
+    <caption>Title</caption>
+    <thead>
+        <tr>
+            <th scope="col">Name categorie 1</th>
+            <th scope="col">Name categorie 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">row 1</th>
+            <td>row 2</td>
+        </tr>
+        <tr>
+            <th scope="row">row 1</th>
+            <td>row 2</td>
+        </tr>
+    </tbody>
+</table>
+```
