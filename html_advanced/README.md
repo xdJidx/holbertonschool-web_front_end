@@ -366,3 +366,11 @@ Same for author section
     © 2020 Techium, made with ♥ by students at Holberton School.
 </p>
 ```
+
+28. Horizontal rule example
+- Add Horizontal rule in div
+```
+<div>
+    <hr>
+</div>
+```
