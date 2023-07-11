@@ -387,3 +387,23 @@ Same for author section
     </blockquote>
 </article>
 ```
+
+30. Examples of quotes
+- Create an inline quote
+```
+<div>
+    <h3>Inline quote</h3>
+    <q>Stay hungry. Stay foolish.</q>
+</div>
+```
+
+- Create a multiline quote
+```
+<div>
+    <h3>Blockquote</h3>
+    <blockquote>
+        <p>I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+        <cite>Kanye West, Musician</cite>
+    </blockquote>
+</div>
+```
