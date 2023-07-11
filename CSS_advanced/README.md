@@ -21,3 +21,21 @@ something {
 - select all anchor element with "a"
 
 - select element with class use "." before name.
+
+3. Reuse and repeat. A programmer's life should be simple with variables
+- Define root element with :root{}
+
+- Define variable color in root
+```
+:root{
+    --color-primary: #d73953;
+    --text-color: var(--color-black)
+   }
+```
+
+- Use this var in another element
+```
+  .section-tagline {
+    color: var(--color-primary);
+  }
+```
