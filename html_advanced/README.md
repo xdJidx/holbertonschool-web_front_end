@@ -418,3 +418,9 @@ Same for author section
 ```
 <small>By Frances J.</small>
 ```
+
+32. Typography section - using the correct tags
+- highlighted tag
+```
+<mark>highlighted</mark>
+```
