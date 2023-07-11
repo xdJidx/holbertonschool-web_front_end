@@ -39,3 +39,12 @@ something {
     color: var(--color-primary);
   }
 ```
+
+4. Variables for storing certain font types
+- Custom font-family propreties
+```
+:root {
+--font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
+--font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+```
