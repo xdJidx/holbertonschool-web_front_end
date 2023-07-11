@@ -9,3 +9,15 @@ html {
     scroll-behavior: smooth;
   }
 ```
+
+2. Do you know your color values?
+- Add foreground color to something
+```
+something {
+    color: #FFFFFF;
+}
+```
+
+- select all anchor element with "a"
+
+- select element with class use "." before name.
