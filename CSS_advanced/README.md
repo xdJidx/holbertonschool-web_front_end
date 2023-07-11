@@ -56,3 +56,13 @@ something {
     --font-size-xx-large: 4.8rem;
   }
 ```
+
+6. Variables for the font-weight
+- Custom font-weight
+```
+:root{
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+  }
+```
+
