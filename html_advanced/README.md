@@ -520,3 +520,11 @@ Facebook icon
     Sorry, your browser doesn't support audio element
 </audio>
 ```
+
+40. Add a iframe example in the styleguide
+- Add iframe
+```
+<iframe width="350px" height="200px" src="https://www.youtube.com/embed/41N6bKO-NVI" title="Holberton School" frameborder="0">
+    Holberton Sally
+</iframe>
+```
