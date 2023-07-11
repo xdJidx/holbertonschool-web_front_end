@@ -512,3 +512,11 @@ Facebook icon
     Sorry, your browser doesn't support HTML5 video
 </video>
 ```
+
+39. Add an audio player in the styleguide
+- Add link audio
+```
+<audio src="https://intranet-projects-files.s3.amazonaws.com/webstack/TroubleChapter8_64kb.mp3" controls >
+    Sorry, your browser doesn't support audio element
+</audio>
+```
