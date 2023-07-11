@@ -358,3 +358,11 @@ Same for author section
 </div>
 ```
 
+27. Separate content
+- Add horizontal rules
+```
+<hr>
+<p>
+    © 2020 Techium, made with ♥ by students at Holberton School.
+</p>
+```
