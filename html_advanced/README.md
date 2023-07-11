@@ -295,7 +295,16 @@ Same for author section
 ```
 
 23. Services, Works, Latest news links
-Add link in h3 header.
+- Add link in h3 header.
 ```
 <h3><a href="#">Design & Concept</a></h3>
+```
+
+24. List the links
+- Add unorded list.
+```
+<ul>
+    <li><a href="https://www.facebook.com/HolbertonSchool/">Facebook</a></li>        <li><a href="https://twitter.com/holbertonschool">Twitter</a></li>
+    <li><a href="https://www.instagram.com/holbertonschool/">Instagram</a></li>
+</ul>
 ```
