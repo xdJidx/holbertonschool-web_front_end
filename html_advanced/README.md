@@ -472,3 +472,9 @@ Same for author section
     </details>
 </div>
 ```
+
+35. Replace text logo with image logo
+- Add link image with dimension.
+```
+<a href="/"><img src="logo-black.png" alt="Techium logo" width="160" height="40"></a>
+```
