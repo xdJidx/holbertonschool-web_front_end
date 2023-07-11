@@ -322,3 +322,39 @@ Same for author section
     </div>
 </div>
 ```
+
+26. Examples of lists for the styleguide
+- Creat unordered list
+```
+<div>
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>
+```
+
+- Creat ordered list
+```
+<div>
+    <ol>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+</div>
+```
+
+- Creat definition list
+```
+<div>
+    <dl>
+        <dt>title</dt>
+        <dd>defiinition</dd>
+        <dt>title</dt>
+        <dd>defiinition</dd>
+    </dl>
+</div>
+```
+
