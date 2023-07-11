@@ -48,3 +48,11 @@ something {
 --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
   }
 ```
+
+5. Variables for the font size
+- Custom font size.
+```
+:root {
+    --font-size-xx-large: 4.8rem;
+  }
+```
