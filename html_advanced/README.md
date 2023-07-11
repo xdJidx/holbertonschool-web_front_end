@@ -293,3 +293,9 @@ Same for author section
 ```
 <a href="contact.html">Get in touch</a>
 ```
+
+23. Services, Works, Latest news links
+Add link in h3 header.
+```
+<h3><a href="#">Design & Concept</a></h3>
+```
