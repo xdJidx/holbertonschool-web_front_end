@@ -319,3 +319,20 @@ ul.row {
     left: var(--header-logo-link-left);
 }
 ```
+
+29. Styling and custom properties for the nav
+```
+.nav .nav-link{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem;
+}
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
+}
+```
