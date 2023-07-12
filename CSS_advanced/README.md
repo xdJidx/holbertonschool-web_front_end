@@ -406,3 +406,8 @@ ul.row {
     z-index: -1;
 }
 ```
+
+32. Incorporating transitions
+```
+Cherche yourself
+```
