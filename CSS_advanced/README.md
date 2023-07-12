@@ -141,3 +141,13 @@ link : https://intranet.hbtn.io/rltoken/SE65V_9HBDJxYAuoJfK2YQ
     box-sizing: border-box;
 }
 ```
+
+16. Styling the container
+- Taget the container class
+```
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+```
