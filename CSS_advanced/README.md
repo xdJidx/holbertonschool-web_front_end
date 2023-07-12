@@ -130,3 +130,7 @@ a:active{
     background-color: var(--color-light-grey);
 }
 ```
+
+14. Resetting the CSS stylesheet for browser consistency
+link : https://intranet.hbtn.io/rltoken/SE65V_9HBDJxYAuoJfK2YQ
+
