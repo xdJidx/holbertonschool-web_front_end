@@ -66,3 +66,9 @@ something {
   }
 ```
 
+7. Integrating Google Fonts into the CSS file
+- Add Open Sans and Raleway in first choice
+```
+--font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+--font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+```
