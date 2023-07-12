@@ -303,3 +303,19 @@ ul.row {
     padding: 10rem 40rem 2rem 0;
 }
 ```
+
+28. Fixing the header and menu navigation bar
+```
+.header{
+    padding: var(--header-padding);
+}
+.header-logo {
+    position: var(--header-logo-position);
+}
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+}
+```
