@@ -273,3 +273,20 @@ ul.row {
     background-color: var(--button-hover-background);
 }
 ```
+
+26. Add border radius to images
+```
+.card-testimonial {
+    text-align: center;
+}
+.card-testimonial .card-avatar{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+}
+```
