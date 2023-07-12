@@ -549,13 +549,6 @@ ul.row {
     right: -0.1rem;
     z-index: 1;
 }
-.card-work .card-inner{
-    text-align: center;
-    margin: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
-}
 .card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
 }
