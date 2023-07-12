@@ -104,3 +104,13 @@ a{
     --section-tagline-transform: uppercase;
 }
 ```
+
+12. Adding more styling to the section title
+```
+.section-title{
+    font-family: var(--font-size-large);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+```
