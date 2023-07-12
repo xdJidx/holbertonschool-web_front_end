@@ -151,3 +151,17 @@ link : https://intranet.hbtn.io/rltoken/SE65V_9HBDJxYAuoJfK2YQ
     margin-right: auto;
 }
 ```
+
+17. Adding padding to sections
+- Create properties for custom padding
+```
+:root{
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+}
+```
+
