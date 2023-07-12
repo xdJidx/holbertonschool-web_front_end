@@ -290,3 +290,16 @@ ul.row {
     color: var(--color-primary);
 }
 ```
+
+27. Styling the section hero
+```
+.section-hero{
+    background-size: 90rem auto;
+}
+.section-hero .section-title{
+    margin-bottom: 5rem;
+}
+.section-hero .section-inner{
+    padding: 10rem 40rem 2rem 0;
+}
+```
