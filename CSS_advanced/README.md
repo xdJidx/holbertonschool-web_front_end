@@ -91,6 +91,16 @@ a{
 ```
 
 10. Centering the section titles
+```
 :root{
       --section-header-align: center;
 }
+```
+
+11. Add more styles to the section tagline
+- New section transform
+```
+:root{
+    --section-tagline-transform: uppercase;
+}
+```
