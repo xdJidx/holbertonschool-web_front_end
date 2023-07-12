@@ -239,3 +239,21 @@ ul.row {
     fill: var(--text-color);
 }
 ```
+
+24. Add background and hover state to services
+```
+.card-service .card-title{
+    margin: 0;
+}
+.card-service a{
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+.card-service a:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+```
+
