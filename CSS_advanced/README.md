@@ -196,3 +196,13 @@ ul.row {
     text-align: right;
 }
 ```
+
+20. Clear the context of the grid
+Write a CSS rule that creates a new row after each instance of the class row
+```
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+```
