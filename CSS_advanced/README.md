@@ -81,3 +81,11 @@ something {
     --line-height-big: 1.8;
 }
 ```
+
+9. Links are decorated by default, time to remove them
+- Style the anchor elements so the text isn’t decorated with anything
+```
+a{
+    text-decoration: None;
+}
+```
