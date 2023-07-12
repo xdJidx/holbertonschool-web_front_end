@@ -198,11 +198,20 @@ ul.row {
 ```
 
 20. Clear the context of the grid
-Write a CSS rule that creates a new row after each instance of the class row
+- Write a CSS rule that creates a new row after each instance of the class row
 ```
 .row::after {
     content: "";
     display: table;
     clear: both;
   }
+```
+
+21. Simplify the col- selector
+- Select all classes that start with col-
+```
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
 ```
