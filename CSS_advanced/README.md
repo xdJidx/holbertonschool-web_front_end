@@ -134,3 +134,10 @@ a:active{
 14. Resetting the CSS stylesheet for browser consistency
 link : https://intranet.hbtn.io/rltoken/SE65V_9HBDJxYAuoJfK2YQ
 
+15. Add universal box-sizing
+-  add a universal box sizing rule
+```
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+```
