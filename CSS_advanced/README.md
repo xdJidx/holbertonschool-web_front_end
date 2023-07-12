@@ -178,3 +178,21 @@ link : https://intranet.hbtn.io/rltoken/SE65V_9HBDJxYAuoJfK2YQ
     --nav-item-link-hover: var(--color-primary)
 }
 ```
+
+19.  Grid styling and custom variables
+- Custom grid and vairables
+```
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.col-1-3{
+    width: 33.33%;
+    float: left;
+    padding: 0.5rem;
+}
+ul.footer{
+    text-align: right;
+}
+```
