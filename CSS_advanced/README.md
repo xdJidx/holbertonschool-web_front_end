@@ -86,6 +86,6 @@ something {
 - Style the anchor elements so the text isn’t decorated with anything
 ```
 a{
-    text-decoration: None;
+    text-decoration: none;
 }
 ```
