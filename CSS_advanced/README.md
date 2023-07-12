@@ -225,3 +225,17 @@ ul.row {
     background-color: var(--color-black);
 }
 ```
+
+23. Fix issues for dark theme
+- Set footer-adress, social link and svg children in social link
+```
+.footer-address{
+    color: var(--text-color);
+}
+.social-link{
+    display: block;
+}
+.social-link > svg{
+    fill: var(--text-color);
+}
+```
