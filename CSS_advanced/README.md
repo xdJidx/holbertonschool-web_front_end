@@ -114,3 +114,19 @@ a{
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 ```
+
+13. Pseudo Classes
+```
+a:link {
+    text-decoration: none;
+}
+a:visited{
+    font-style: italic;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    background-color: var(--color-light-grey);
+}
+```
