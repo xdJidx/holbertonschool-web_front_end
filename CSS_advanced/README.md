@@ -72,3 +72,12 @@ something {
 --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 ```
+
+8. Defining line heights
+- Create line height custom
+```
+:root{
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+```
