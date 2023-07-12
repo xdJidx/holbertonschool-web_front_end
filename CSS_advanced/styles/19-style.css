@@ -408,11 +408,11 @@ ul.row {
     padding: var(--footer-padding);
 }
 .footer-copyright{
-    margin: none;
-    size: var(--font-size-small);
+    margin: 0;
+    font-size: var(--font-size-small);
     color: var(--text-color); 
 }
-ul.footer{
+.footer ul{
     text-align: right;
 }
 .navbar-menu{

@@ -192,7 +192,7 @@ ul.row {
     float: left;
     padding: 0.5rem;
 }
-ul.footer{
+.footer ul{
     text-align: right;
 }
 ```
