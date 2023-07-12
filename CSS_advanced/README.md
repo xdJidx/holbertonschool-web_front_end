@@ -390,3 +390,19 @@ ul.row {
     opacity: 1;
 }
 ```
+
+31. Add quotes decoration on testimonials
+```
+.card-testimonial .card-quote{
+    position: relative;
+}
+.card-testimonial .card-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
+}
+```
