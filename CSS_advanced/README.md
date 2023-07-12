@@ -89,3 +89,8 @@ a{
     text-decoration: none;
 }
 ```
+
+10. Centering the section titles
+:root{
+      --section-header-align: center;
+}
