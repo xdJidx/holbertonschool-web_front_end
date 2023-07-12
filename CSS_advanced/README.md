@@ -215,3 +215,13 @@ ul.row {
     padding: 0.5rem;
 }
 ```
+
+22. Add a dark theme to sections
+- Style the data-section-theme=“dark” 
+```
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+```
