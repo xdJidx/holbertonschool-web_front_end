@@ -34,3 +34,20 @@ For this :
 - In "Styles", click on ':hov' and select ':hover'.
 - Take a screenshot.
 <br>
+
+## 3. Copy all the styles of the button
+Go to https://dev-tools.hbtn.info/
+
+Select the Download me! and copy all the CSS styling that is applied on this button.
+
+Your answer file must contain all CSS styling one per line like this example:
+```
+$ head -2 3-button_styles
+border-radius: 1px;
+color: #FF00FF;
+$
+```
+For this :
+- Open the developer tools: Right-click on the button, select 'Inspect'.
+- In "Element", click right on the name of the class button and go on "Copier" -> "Copier les styles".
+- "Ctrl + v" on your reponse's file.
