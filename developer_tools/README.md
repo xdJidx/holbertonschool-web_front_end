@@ -23,3 +23,14 @@ For this :
 - In "Styles" search background-color and take this code in : #4233bd
 - Take a screenshot.
 <br>
+
+## 2. Force element state
+Go to https://dev-tools.hbtn.info/<br>
+
+Force the hover state of the “cake” block in the section Portfolio Take a screenshot of it<br>
+
+For this :
+- Open the developer tools: Right-click on the web page, select 'Inspect'.
+- In "Styles", click on ':hov' and select ':hover'.
+- Take a screenshot.
+<br>
