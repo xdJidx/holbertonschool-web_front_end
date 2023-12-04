@@ -51,3 +51,20 @@ For this :
 - Open the developer tools: Right-click on the button, select 'Inspect'.
 - In "Element", click right on the name of the class button and go on "Copier" -> "Copier les styles".
 - "Ctrl + v" on your reponse's file.
+<br>
+
+## 4. Change button styles
+Go to https://dev-tools.hbtn.info/<br>
+
+- All primary buttons (btn-primary) should have the #0080ee color as a background color
+- All outlined buttons light (btn-outline-light) should have #0020aa for the text color
+- Screenshot all buttons that changed and merge it to one image
+
+
+For this :
+- Open the developer tools: Right-click on the site web, select 'Inspect'.
+- "Ctrl  + F" to open search by name, and write btn-primary.
+- In "Style" section change the background color by #0080ee
+- Do the same for other buttons.
+- Take a screenshot.
+<br>
