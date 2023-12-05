@@ -206,3 +206,14 @@ For this :
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In "Ressource", refresh web page and see on the bottom the request.
 <br>
+
+## 18. Number of CSS files
+Go to https://dev-tools.hbtn.info/<br>
+
+How many CSS resources are loaded on this page?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and select in filtrer "CSS"
+- See on the bottom the number.
+<br>
