@@ -305,3 +305,11 @@ For this :
 - Open Lighthouse module and start test for webpage.
 - In "BONNES PRATIQUES RELATIVES AU CONTENU", you have this category : Des éléments d'image n'ont pas d'attribut alt.
 <br>
+
+## 27. Best practices
+Go to https://dev-tools.hbtn.info/<br>
+
+Which attribute is missing on all the links with the target _blank?<br>
+
+When target="_blank" is used, it instructs the browser to open the link in a new window or tab. However, this practice can sometimes pose security issues, especially concerning the Same Origin Policy. To mitigate these security risks, it is recommended to add the <strong>rel="noopener"</strong> or <strong>rel="noreferrer"</strong> attribute for target="_blank" links to reduce potential risks associated with "window.opener" type attacks.
+<br>
