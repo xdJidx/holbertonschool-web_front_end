@@ -313,3 +313,17 @@ Which attribute is missing on all the links with the target _blank?<br>
 
 When target="_blank" is used, it instructs the browser to open the link in a new window or tab. However, this practice can sometimes pose security issues, especially concerning the Same Origin Policy. To mitigate these security risks, it is recommended to add the <strong>rel="noopener"</strong> or <strong>rel="noreferrer"</strong> attribute for target="_blank" links to reduce potential risks associated with "window.opener" type attacks.
 <br>
+
+## 28. SEO
+Go to https://dev-tools.hbtn.info/
+
+Which <a> links don’t have enough text description?
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- On the consol, use this line :
+```
+Array.from(document.querySelectorAll('a')).filter(link => !link.textContent.trim());
+```
+With this, you selected all 'a' in the HTML, create table with Array.from(...) to use filter() and '.filter(link => !link.textContent.trim())' for each 'a' after deleted spaces (trim()) and empty (!).
+<br>
