@@ -285,9 +285,9 @@ For this :
 <br>
 
 ## 25. Accessibility
-Go to https://dev-tools.hbtn.info/
+Go to https://dev-tools.hbtn.info/<br>
 
-When you run an accessibility audit, what is the contrast issue?
+When you run an accessibility audit, what is the contrast issue?<br>
 
 For this : 
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
@@ -295,3 +295,13 @@ For this :
 - In "Contaste", you can see : les couleurs d'arrière plan et de premier plan ne sont pas suffisamment contrastées.
 <br>
 
+## 26. No alt
+Go to https://dev-tools.hbtn.info/<br>
+
+Which classes are on the images that have no alt attribute?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Open Lighthouse module and start test for webpage.
+- In "BONNES PRATIQUES RELATIVES AU CONTENU", you have this category : Des éléments d'image n'ont pas d'attribut alt.
+<br>
