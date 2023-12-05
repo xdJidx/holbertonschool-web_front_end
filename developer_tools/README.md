@@ -352,14 +352,25 @@ For this :
 <br>
 
 ## 31. Application panel
-Go to https://dev-tools.hbtn.info/
+Go to https://dev-tools.hbtn.info/<br>
 
 The application panel gives you access to the storage (cookies, sessions, cache…) and some other options as Services Workers and more recently, notifications.
 
-What is the only key present in the session storage for this page?
+What is the only key present in the session storage for this page?<br>
 
 For this : 
-- - Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In Application module, selected in Stockage : "Session storage".
 - You can see one link with a Key and value.
+<br>
+
+## 32. Service workers
+Go to https://dev-tools.hbtn.info/<br>
+
+Does this page have any service workers? Yes or No<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In Application module, go to Service workers.
+- You can see if you have it.
 <br>
