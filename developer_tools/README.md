@@ -68,3 +68,15 @@ For this :
 - Do the same for other buttons.
 - Take a screenshot.
 <br>
+
+## 5. Remove part of the website
+Go to https://dev-tools.hbtn.info/
+
+Remove the div of the “cake” box in the section Portfolio
+
+For this :
+- Open the developer tools: Right-click on the site web, select 'Inspect'.
+- Click right on the element you want delete
+- Click on "suprrimer l'élement"
+- Take a screenshot
+<br>
