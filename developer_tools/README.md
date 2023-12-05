@@ -228,3 +228,14 @@ For this :
 - In "Ressource", refresh web page and select in filtrer "Image"
 - See on the bottom the number.
 <br>
+
+## 20. Favicon image type
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the type value of the favicon image?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and search the file favicon in list.
+- You can see the type in column type.
+<br>
