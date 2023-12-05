@@ -179,3 +179,8 @@ Go to https://dev-tools.hbtn.info/<br>
 Write in the console console.log(document.title), what is returned?<br>
 
 He returned the doc title ... <br>
+
+## 15. Holberton web framework
+Go to https://dev-tools.hbtn.info/<br>
+
+Which front-end framework could we guess this page is using?<br>
