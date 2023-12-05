@@ -120,3 +120,13 @@ For this :
 - Search background color and click on color pannel.
 - You can change the number type on this and select hsl format.
 <br>
+
+## 9. The max-width of the container
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the max-width for the first .container in the section “About”? (your browser width must be between 1250px and 1440px and with a zoom at 100%)<br>
+
+For this :
+- Open the developer tools: Right-click on the container, select 'Inspect'.
+- You can see in Style the max-widht
+<br>
