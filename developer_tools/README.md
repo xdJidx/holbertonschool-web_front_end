@@ -339,3 +339,14 @@ For this :
 - Add new Extrait and join the code in.
 - You can run the code and screenshot
 <br>
+
+## 30. Block CSS files
+Go to https://dev-tools.hbtn.info/<br>
+
+Block all CSS requests<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Réseau", selected CSS and active Blocked requests.
+- Take a screenshot
+<br>
