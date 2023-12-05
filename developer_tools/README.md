@@ -374,3 +374,15 @@ For this :
 - In Application module, go to Service workers.
 - You can see if you have it.
 <br>
+
+## 33. Security
+Go to https://dev-tools.hbtn.info/<br>
+
+The security panel allows you to make sure HTTS is properly implement on a webpage.<br>
+
+Which organization issued the SSL certificate for this page?<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In Sécurité module, you can see if this page is safe and display the certificat.
+<br>
