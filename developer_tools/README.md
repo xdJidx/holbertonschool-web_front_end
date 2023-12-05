@@ -162,3 +162,13 @@ For this :
 - Change in "Emuler le type de support CSS" in "Imprimer"
 - Take a screenshot
 <br>
+
+## 13. Using the console
+Go to https://dev-tools.hbtn.info/<br>
+
+Select the Avatar image in the header and type $0 in the console. Enter.<br>
+
+What does it return?<br>
+
+It return : <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="avatar">
+<br>
