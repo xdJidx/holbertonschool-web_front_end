@@ -70,13 +70,24 @@ For this :
 <br>
 
 ## 5. Remove part of the website
-Go to https://dev-tools.hbtn.info/
+Go to https://dev-tools.hbtn.info/<br>
 
-Remove the div of the “cake” box in the section Portfolio
+Remove the div of the “cake” box in the section Portfolio<br>
 
 For this :
 - Open the developer tools: Right-click on the site web, select 'Inspect'.
 - Click right on the element you want delete
 - Click on "suprrimer l'élement"
 - Take a screenshot
+<br>
+
+## 6. Where is it coming from?
+Go to https://dev-tools.hbtn.info/<br>
+
+- On the right panel, click on the Computed tab
+- Then, select the h2 with the text ABOUT
+- Search for margin-bottom
+- Which file is coming from that declaration?
+
+That declaration come to : freelancer.css
 <br>
