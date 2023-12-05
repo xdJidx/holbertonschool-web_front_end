@@ -103,5 +103,20 @@ For this :
 - On "Sources", open js file and search "click"
 - You can see all the correspondance with this word.
 
-I can see on the files : 2 + 2 + 3
+I can see on the files : 2 + 2 + 3 = 7 time
+<br>
+
+## 8. What is the HSL code
+Go to https://dev-tools.hbtn.info/<br>
+
+Select the primary button “Send”<br>
+
+What is the equivalent value of the hexadecimal background-color, in HSL?<br>
+
+(format of your answer should be: hsl(<VALUES>);, example: hsl(241, 23%, 24%); following by a new line)<br>
+
+For this : 
+- Open the developer tools: Right-click on the button "Send", select 'Inspect'.
+- Search background color and click on color pannel.
+- You can change the number type on this and select hsl format.
 <br>
