@@ -266,3 +266,20 @@ Go to https://dev-tools.hbtn.info/<br>
 
 What is the notation for Performance (for desktop mode and no throttling - also called Lighthouse)?<br>
 
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Open Lighthouse module and start test for webpage.
+- Take screenshot.
+<br>
+
+## 24. Static assets
+Go to https://dev-tools.hbtn.info/<br>
+
+How many static assets need a better cache policy?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Open Lighthouse module and start test for webpage.
+- In "Diagnostic", you can see : Diffusez des éléments statiques grâce à des règles de cache efficaces.
+- Take a screenshot.
+<br>
