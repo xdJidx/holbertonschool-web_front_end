@@ -260,3 +260,9 @@ For this :
 - In "Ressource", refresh web page and search the file with xhr type.
 - You can see the name of the ressource.
 <br>
+
+## 23. Audits panel
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the notation for Performance (for desktop mode and no throttling - also called Lighthouse)?<br>
+
