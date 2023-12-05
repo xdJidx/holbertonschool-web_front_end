@@ -139,3 +139,26 @@ Switch the section “About” and “Portfolio”<br>
 For this :<br>
 After inspecting the page, click and hold the left mouse button, then drag the 'About' section above the 'Portfolio' section
 <br>
+
+## 11. Coverage
+Go to https://dev-tools.hbtn.info/<br>
+
+How many bytes that freelancer.css covers?<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In the Network tab, reload the page and navigate to the file.
+- Hover over the size to see the resource size.
+<br>
+
+## 12. Emulate the print version of the webpage
+Go to https://dev-tools.hbtn.info/<br>
+
+Take a screenshot of the homepage, only emulation the CSS print version of the website.<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In windows, use Ctrl + Shift + P and search "Rendu"
+- Change in "Emuler le type de support CSS" in "Imprimer"
+- Take a screenshot
+<br>
