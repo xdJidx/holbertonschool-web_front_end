@@ -350,3 +350,16 @@ For this :
 - In "Réseau", selected CSS and active Blocked requests.
 - Take a screenshot
 <br>
+
+## 31. Application panel
+Go to https://dev-tools.hbtn.info/
+
+The application panel gives you access to the storage (cookies, sessions, cache…) and some other options as Services Workers and more recently, notifications.
+
+What is the only key present in the session storage for this page?
+
+For this : 
+- - Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In Application module, selected in Stockage : "Session storage".
+- You can see one link with a Key and value.
+<br>
