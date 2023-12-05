@@ -172,3 +172,10 @@ What does it return?<br>
 
 It return : <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="avatar">
 <br>
+
+## 14. Write code in the console
+Go to https://dev-tools.hbtn.info/<br>
+
+Write in the console console.log(document.title), what is returned?<br>
+
+He returned the doc title ... <br>
