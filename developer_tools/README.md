@@ -130,3 +130,12 @@ For this :
 - Open the developer tools: Right-click on the container, select 'Inspect'.
 - You can see in Style the max-widht
 <br>
+
+## 10. Moving around
+Go to https://dev-tools.hbtn.info/<br>
+
+Switch the section “About” and “Portfolio”<br>
+
+For this :<br>
+After inspecting the page, click and hold the left mouse button, then drag the 'About' section above the 'Portfolio' section
+<br>
