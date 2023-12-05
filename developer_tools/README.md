@@ -327,3 +327,15 @@ Array.from(document.querySelectorAll('a')).filter(link => !link.textContent.trim
 ```
 With this, you selected all 'a' in the HTML, create table with Array.from(...) to use filter() and '.filter(link => !link.textContent.trim())' for each 'a' after deleted spaces (trim()) and empty (!).
 <br>
+
+## 29. Sources
+Go to https://dev-tools.hbtn.info/<br>
+
+The sources panel allow you to edit files, add breakpoints to analyse your JavaScript code and create snippets.<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Go to 'Source' and selected "Extraits"
+- Add new Extrait and join the code in.
+- You can run the code and screenshot
+<br>
