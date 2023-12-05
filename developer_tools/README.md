@@ -184,3 +184,15 @@ He returned the doc title ... <br>
 Go to https://dev-tools.hbtn.info/<br>
 
 Which front-end framework could we guess this page is using?<br>
+
+It's Bootstrap, you can see the name in comentary on Top of CSS page<br>
+
+## 16. Homepage weight
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the total weight of the page (with all the elements)?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and see on the bottom the ressource the page need.
+<br>
