@@ -91,3 +91,17 @@ Go to https://dev-tools.hbtn.info/<br>
 
 That declaration come to : freelancer.css
 <br>
+
+
+## 7. How many listeners
+Go to https://dev-tools.hbtn.info/<br>
+
+How many times click events are referenced in JavaScript files?<br>
+
+For this :
+- Open the developer tools: Right-click on the site web, select 'Inspect'.
+- On "Sources", open js file and search "click"
+- You can see all the correspondance with this word.
+
+I can see on the files : 2 + 2 + 3
+<br>
