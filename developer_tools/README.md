@@ -196,3 +196,13 @@ For this :
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In "Ressource", refresh web page and see on the bottom the ressource the page need.
 <br>
+
+## 17. Number of requests
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the number of requests done when accessing this page?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and see on the bottom the request.
+<br>
