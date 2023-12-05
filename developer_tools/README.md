@@ -249,3 +249,14 @@ For this :
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In "Styles", search font-family
 <br>
+
+## 22. XHR calls
+Go to https://dev-tools.hbtn.info/<br>
+
+What is the name of the resource that generates 1 XHR calls?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and search the file with xhr type.
+- You can see the name of the ressource.
+<br>
