@@ -239,3 +239,13 @@ For this :
 - In "Ressource", refresh web page and search the file favicon in list.
 - You can see the type in column type.
 <br>
+
+## 21. Font library
+Go to https://dev-tools.hbtn.info/<br>
+
+Holberton School website uses a font library for their icons, which one is it?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Styles", search font-family
+<br>
