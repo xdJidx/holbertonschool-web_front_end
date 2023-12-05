@@ -386,3 +386,14 @@ For this :
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In Sécurité module, you can see if this page is safe and display the certificat.
 <br>
+
+## 34. Expiration date
+Go to https://dev-tools.hbtn.info/<br>
+
+When does the SSL certificate expire?<br>
+
+For this :
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In Sécurité module, you can display the certificat.
+- Take a screenshot
+<br>
