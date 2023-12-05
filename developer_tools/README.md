@@ -283,3 +283,15 @@ For this :
 - In "Diagnostic", you can see : Diffusez des éléments statiques grâce à des règles de cache efficaces.
 - Take a screenshot.
 <br>
+
+## 25. Accessibility
+Go to https://dev-tools.hbtn.info/
+
+When you run an accessibility audit, what is the contrast issue?
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- Open Lighthouse module and start test for webpage.
+- In "Contaste", you can see : les couleurs d'arrière plan et de premier plan ne sont pas suffisamment contrastées.
+<br>
+
