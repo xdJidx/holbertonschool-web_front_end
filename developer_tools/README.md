@@ -217,3 +217,14 @@ For this :
 - In "Ressource", refresh web page and select in filtrer "CSS"
 - See on the bottom the number.
 <br>
+
+## 19. Number of images
+Go to https://dev-tools.hbtn.info/<br>
+
+How many image resources are loaded on this page?<br>
+
+For this : 
+- Open the developer tools: Right-click on the webpage, select 'Inspect'.
+- In "Ressource", refresh web page and select in filtrer "Image"
+- See on the bottom the number.
+<br>
