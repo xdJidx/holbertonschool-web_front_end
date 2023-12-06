@@ -248,6 +248,7 @@ Holberton School website uses a font library for their icons, which one is it?<b
 For this : 
 - Open the developer tools: Right-click on the webpage, select 'Inspect'.
 - In "Styles", search font-family
+- You have the name "wesome" in stylesheep css.
 <br>
 
 ## 22. XHR calls
