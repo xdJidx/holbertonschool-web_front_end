@@ -193,15 +193,21 @@ Write a Sass file that assigns:
 - Font size 12px to all tags of class .info
 - Text color #00FF00 to all tags of class .success and extend style of the class .info
 - Text color #FF0000 to all tags of class .warning and extend style of the class .info
+
+To extend class and add all declaration in another, use @extend + name_of_tag.
 ```
 .info {
-    font-size: 12px;
-    &.success {
-        color: #00FF00;
-    }
-    &.warning {
-        color: #FF0000;
-    }
+  font-size: 12px;
+}
+
+.success {
+  @extend .info;
+  color: #00FF00;
+}
+
+.warning {
+  @extend .info;
+  color: #FF0000;
 }
 ```
 <br>
