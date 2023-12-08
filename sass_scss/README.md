@@ -41,3 +41,28 @@ p {
 }
 ```
 <br>
+
+## 2. Colors
+Write a Sass file that assigns:
+- The text color #3D3D3D to the HTML tags body and p
+- The background color #6D6D6D to the HTML tags body and h2
+- You must use 2 Sass variables
+
+Create a new variable and use it in good tags.
+```
+$text-color: #3D3D3D;
+$background-color: #6D6D6D;
+
+body {
+    color: $text-color;
+    background-color: $background-color;
+}
+
+p {
+    color: $text-color;
+}
+
+h2 {
+    background-color: $background-color;
+}
+```
