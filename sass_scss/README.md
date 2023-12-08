@@ -138,3 +138,24 @@ button {
 
 ```
 <br>
+
+## 7. Nested and nested again
+Write a Sass file that assigns:
+
+- Font size 14px to all body tags
+- Font size 16px to all h1 tags inside body tags
+- Font size 12px to h1 tags of class .smaller inside body tags
+- You must use nested declarations
+```
+body {
+    font-size: 14px;
+    h1 {
+        font-size: 16 px;
+        .smaller {
+            font-size: 12px;
+        }
+    }
+}
+
+```
+<br>
