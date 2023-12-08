@@ -146,12 +146,14 @@ Write a Sass file that assigns:
 - Font size 16px to all h1 tags inside body tags
 - Font size 12px to h1 tags of class .smaller inside body tags
 - You must use nested declarations
+
+Don't forget to add '&' before the tag class.
 ```
 body {
     font-size: 14px;
     h1 {
         font-size: 16 px;
-        .smaller {
+        &.smaller {
             font-size: 12px;
         }
     }
