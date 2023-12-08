@@ -66,3 +66,22 @@ h2 {
     background-color: $background-color;
 }
 ```
+<br>
+
+## 3. Nested tag
+Write a Sass file that assigns:
+- No margin or padding in body tags
+- Margin 10px to all of the p tags inside body tags
+- You must use nested declarations
+
+```
+body {
+    margin: 0px;
+    padding: 0px;
+
+    p {
+        margin: 10px;
+    }
+}
+```
+<br>
