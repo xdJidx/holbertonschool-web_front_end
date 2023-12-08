@@ -121,3 +121,20 @@ body {
 
 ```
 <br>
+
+## 6. Nested hover
+Write a Sass file that assigns:
+- Text color #FF0000 to button tags
+- When the user hovers over button tags, text color should change to #00FF00
+- You must use nested declarations
+```
+button {
+    color: #FF0000;
+
+    &:hover {
+        color: #00FF00;
+    }
+}
+
+```
+<br>
