@@ -214,7 +214,6 @@ To extend class and add all declaration in another, use @extend + name_of_tag.
 
 ## 10. Import colors
 Write a Sass file that assigns:
-
 - Text color $red from 10-colors.scss to the class .red
 - Text color $green from 10-colors.scss to the class .green
 - Text color $blue from 10-colors.scss to the class .blue
@@ -232,6 +231,25 @@ Write a Sass file that assigns:
 
 .blue {
     color: $blue;
+}
+
+```
+<br>
+
+## 11. For each
+Write a Sass file that creates a class for each name in the list $list-names and assigns the background image based on the name (example below):
+
+- You must use @import
+- You must use @each statement
+
+Use @each name_variable in name_list to declare loop.
+```
+@import "11-photos";
+
+@each $name in $list-names {
+  .photo-#{$name} {
+    background: image-url("photos/#{$name}.jpg") no-repeat;
+  }
 }
 
 ```
