@@ -265,7 +265,8 @@ Write a Sass file that creates H* tags, where ‘*’ is the size of the font us
 ```
 @for $i from 1 through 5 {
     .H-#{$i} {
-        font-size: $i;}
+        font-size: #{$i}px;
+    }
 }
 
 ```
