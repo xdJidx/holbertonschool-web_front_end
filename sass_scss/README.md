@@ -161,3 +161,28 @@ body {
 
 ```
 <br>
+
+## 8. Margin mixin
+Write a Sass file that assigns:
+
+- Margin left and right at 10px to body tags
+- Margin left and right at 15px to div tags
+- You must use a mixin
+
+Maxin is like a function, you declare with @mixin + name_of_function($var1, $var2).
+```
+@mixin marginLR($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+body {
+    @include marginLR(10px, 10px);
+}
+
+div {
+    @include marginLR(15px, 15px);
+}
+
+```
+<br>
