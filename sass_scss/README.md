@@ -254,3 +254,19 @@ Use @each name_variable in name_list to declare loop.
 
 ```
 <br>
+
+## 12. Loop Headers
+Write a Sass file that creates H* tags, where ‘*’ is the size of the font used.
+
+- h1 must have font size equal to 1px, h2 must have font size equal to 2px, etc.
+- You must create H* tags from 1 to 5
+- You must use @for statement
+
+```
+@for $i from 1 through 5 {
+    .H-#{$i} {
+        font-size: $i;}
+}
+
+```
+<br>
