@@ -101,3 +101,23 @@ body {
 
 ```
 <br>
+
+## 5. Nested child
+Write a Sass file that assigns:
+
+- Text color #3D3D3D to elements inside body tags
+- Text color #FF0000 to any elements of class .red that are the first children of the body
+- You must use nested declarations
+
+To declare all element of class .red that are the first children of the body you must use : ">"
+```
+body {
+    color: #3D3D3D;
+
+    > .red {
+        color: #FF0000;
+    }
+}
+
+```
+<br>
