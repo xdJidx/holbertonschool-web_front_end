@@ -1,4 +1,4 @@
-![](Ecran d'accueil iphoneX.png)
+![](accueil_iphoneX.png)
 
  Developer tools
 This is a Holberton school project for full stack specialisation's students.
