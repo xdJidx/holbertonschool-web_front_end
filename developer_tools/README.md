@@ -1,4 +1,6 @@
-# Developer tools
+![](Ecran d'accueil iphoneX.png)
+
+ Developer tools
 This is a Holberton school project for full stack specialisation's students.
 
 ## 0. Responsive device
