@@ -131,3 +131,32 @@ In your 5-styles.css file,
   }
 ```
 <br>
+
+## 6. Flexify the navbar
+in 6-styles.css, inside the /* Navbarsection
+- In the nav class selector
+  - Property: display, Value: flex
+- Inside the .nav .nav-item selector, remove the display declaration
+- Target .nav-item + .nav-item inside nav class
+  - Move the margin declaration from .nav .nav-item inside the new selector.
+- In the variables section
+  - Change the value of the variable nav-item-margin to be 0 0 0 2rem
+```
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: var(--nav-item-margin);
+  }
+  
+  .nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+  }
+  
+```
+<br>
