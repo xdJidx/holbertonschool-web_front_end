@@ -35,3 +35,21 @@ The Latest news should appear in a reverse order.
   }
 ```
 <br>
+
+## 3. Simplify services list
+In the Services section of 3-index.html, remove the second ul and put the 3 lielements under the first ul<br>
+
+All the li are on the first ul now.<br>
+
+Now, in your CSS file, before  4. CARD , add a new comment: /* Section SERVICES ============================= */<br>
+
+Under that comment section, add a new selector targeting the row class inside the section-services class
+
+- Property: flex-wrap, Value: wrap
+```
+  /* Section SERVICES ============================= */
+    .section-services .row {
+        flex-wrap: wrap;
+    }
+```
+<br>
