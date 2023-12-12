@@ -225,3 +225,54 @@ In 9-styles.css, after the /* Section SERVICES section, create a /* Section ABOU
         align-self: center;
     }
 ```
+
+## 10. Creating an article by fixing issues and updating hero styles
+In 10-styles.css, inside the /* Section HERO section<br>
+After the .section-hero, add a new hero-homepage class selector (you will need to add that class later in your html files)<br>
+Move all declarations inside section-hero inside the new hero-homepage class selector<br>
+Inside section-hero class selector
+- Property: position, Value: relative
+- Property: margin-top, Value: -8.5rem
+Below, target .section-body inside section-hero class
+- Property: padding, Value: 10rem 4rem
+Below, target .section-category inside section-hero class
+- Property: color, Value: point to the variable color-white
+- Property: text-transform, Value: uppercase
+```
+ /* Section HERO
+      ============================= */
+  
+  .section-hero {
+    position: relative;
+    margin-top: -8.5rem;
+  }
+  
+  .hero-homepage {
+    background-image: url('../images/hero-homepage.jpg');
+    background-position: 75% 0;
+    background-repeat: no-repeat;
+    background-size: 90rem auto;
+    background-color: #010101;
+  }
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+  
+  .section-hero .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  
+  .section-hero .section-body {
+    padding: 10rem 4rem;
+  }
+
+  .section-hero .section-category {
+    color: var(--color-white);
+    text-transform: uppercase;
+  }
+```
+<br>
