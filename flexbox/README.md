@@ -221,7 +221,7 @@ In 9-styles.css, after the /* Section SERVICES section, create a /* Section ABOU
 - Property: align-self, Value: center
 ```
   /* Section ABOUT US ============================= */
-    .section-about-us .col- {
+    .section-about-us [class^="col-"] {
         align-self: center;
     }
 ```
