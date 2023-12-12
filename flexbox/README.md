@@ -181,3 +181,37 @@ n 7-styles.css, inside the /* Header section, in the header-container class sele
   }
 ```
 <br>
+
+## 8. Simplify the hero banner
+In 8-styles.cssInside the /* Section HERO section
+- In the selector targeting section-inner class in section-hero class, remove the padding and replace with
+ - Property: display, Value: flex
+ - Property: flex-direction, Value: column
+ - Property: align-items, Value: flex-start
+ - Property: justify-content, Value: center
+ - Property: min-height, Value: 50vh
+ ```
+  /* Section HERO
+      ============================= */
+  
+  .section-hero {
+    background-position: 75% 0;
+    background-repeat: no-repeat;
+    background-size: 90rem auto;
+    background-color: #010101;
+  }
+  
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+  
+  .section-hero .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  
+ ```
+ <br>
