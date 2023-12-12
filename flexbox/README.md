@@ -95,4 +95,39 @@ In 4-styles.css file, within the Grid section<br>
   }
   ```
   <br>
+
+## 5. Flexify the header
+In your 5-index.html file, inside the Header section
+- Wrap the div with class header-logo and the nav with class navbar-menu with a div that has header-container as a class
+
+In your 5-styles.css file,
+- Inside the /* Header section
+- Add a selector for the header-container class
+  - Property: display, Value: flex
+  - Property: justify-content, Value: space-between
+- Remove header-logo and header-logo a rules
+- Remove the navbar-menu rule
+- In the variables section
+  - Remove
+   - header-logo-position
+   - header-logo-link-display
+   - header-logo-link-position
+   - header-logo-link-top
+   - header-logo-link-left
+```
+  /* Header
+      ============================= */
   
+  .header {
+    padding: var(--header-padding);
+         position: relative;
+         z-index: 3;
+         background: transparent;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+```
+<br>
