@@ -53,3 +53,46 @@ Under that comment section, add a new selector targeting the row class inside th
     }
 ```
 <br>
+
+## 4. Playing around with the spacing between flex service items
+Using the files from the previous task for this task:<br>
+
+In 4-styles.css file, within the Grid section<br>
+
+- In .col-1-3 selector
+  - Replace the current width with calc((100% / 3) - 2rem)
+- In .col-1-2 selector
+  - Replace the current width with calc((100% / 2) - 2rem)
+- In [class*='col-']
+  - Remove the padding declaration
+  - Set Property: margin to 1rem
+- In ul.row declaration
+  - Replace the current margin with -1rem
+```
+  /* Grid
+      ============================= */
+  
+  ul.row {
+    margin: -1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  [class*='col-'] {
+    margin: 1rem;
+  }
+  
+  .col-1-3 {
+    width: calc((100% / 3) - 2rem)
+  }
+  
+  .col-1-2 {
+    width: calc((100% / 2) - 2rem)
+  }
+
+  .row {
+    display: flex;
+  }
+  ```
+  <br>
+  
