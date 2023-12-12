@@ -14,3 +14,9 @@ In the /* Grid section within your CSS<br>
 - Entirely remove the row::after declaration
 - Remove the float: left inside [class*='col-']
 => All elements should appear same than before using the float<br>
+
+## 1. Add new classes on sections
+You can use more 1 name in class="".
+This task is for this.
+
+<br>
