@@ -276,3 +276,86 @@ Below, target .section-category inside section-hero class
   }
 ```
 <br>
+
+## 11. Update the new hero banner
+In 11-article.html in the Hero section
+- Add the hero-article class on the header which is in main
+- Add this background-image (pic-article-02.jpg) as an inline style still on the header
+- Inside the section with section-inner class
+  - Add a span with the class section-category and the text Digital Life
+  - Below, add an h1 with the class section-title and the following text Ut alios omittam, hunc appello, quem ille unum secutus est
+
+At the end of 11-styles.css, create a new comment section<br>
+Target the hero-article class
+- Property: background-size, Value: 150rem 100rem
+- Property: background-position, Value: 50% 0
+
+Target the before pseudo element of hero-article class
+- Property: content, Value: empty
+- Property: background, Value: rgba(0, 0, 0, 0.8)
+- Property: position, Value: absolute
+- Property: top, Value: 0
+- Property: right, Value: 0
+- Property: left, Value: 0
+- Property: bottom, Value: 0
+- Property: z-index, Value: 0
+
+Target the section-inner class inside the hero-article class
+- Property: text-align, Value: center
+- Property: align-items, Value: center
+- Property: min-height, Value: 40vh
+
+Target the section-body class inside the hero-article class
+- Property: position, Value: relative
+- Property: padding, Value: 7rem 0 0
+- Property: z-index, Value: 2
+```
+<!– Main –>
+    <main>
+      <!– Hero section –>
+      <header class="section-hero hero-article" data-section-theme="dark" style="background-image: url('pic-article-02.jpg')">
+        
+        <div class="container">
+          <div class="section-body">
+            <section class="section-inner">
+                <span class="section-category">Digital Life</span>
+                <h1 class="section-title">Ut alios omittam, hunc appello, quem ille unum secutus est</h1>
+            </section>
+          </div>
+        </div>
+      </header>
+    </main>
+
+  /*** ARTICLE PAGE ***/
+/* Section HERO (article)
+      ============================= */
+.hero-article {
+    background-size: 150rem 100rem;
+    background-position: 50% 0;
+}
+
+.hero-article ::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.hero-article .section-inner {
+    text-align: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.hero-article .section-body {
+    position: relative;
+    padding: 7rem 0 0;
+    z-index: 2;
+}
+
+```
+<br>
