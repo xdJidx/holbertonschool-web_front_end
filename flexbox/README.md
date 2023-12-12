@@ -160,3 +160,24 @@ in 6-styles.css, inside the /* Navbarsection
   
 ```
 <br>
+
+## 7. Align center logo and navbar
+n 7-styles.css, inside the /* Header section, in the header-container class selector, set the property align-items to center.
+```
+  /* Header
+      ============================= */
+  
+  .header {
+    padding: var(--header-padding);
+         position: relative;
+         z-index: 3;
+         background: transparent;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+```
+<br>
