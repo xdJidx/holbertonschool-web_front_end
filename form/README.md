@@ -59,3 +59,48 @@ form {
 }
 ```
 <br>
+
+## 1. more comment basic structure
+From 01-article.html, create 02-article.html
+- In the form in the comment section
+ - Create a first fieldset with a legend that has the text Your personal information and the class visually-hidden
+  - In the fieldset create a first div with the classes form-group and col-1-2
+  - Sibling to the first div, create a second div with the classes form-group and col-1-2
+  - Sibling to the 2 divs create a third div with the classes form-group and col-2-3
+ - Sibling to the first fieldset, create a second fieldset with a legend that has the text Your comment and the class visually-hidden
+  - In the second fieldset create a first div with the classes form-group and col-2-3
+  - Sibling to the first div create a second div with the classes form-group and col-2-3
+  - Sibling to the 2 divs create a third div with the class form-group
+```
+<form action="#" method="post">
+    <fieldset>
+        <legend class="visually-hidden">Your personal information</legend>
+        <div class="form-group col-1-2"></div>
+        <div class="form-group col-1-2"></div>
+        <div class="form-group col-2-3"></div>
+    </fieldset>
+    <fieldset>
+        <legend class="visually-hidden">Your comment</legend>
+        <div class="form-group col-2-3"></div>
+        <div class="form-group col-2-3"></div>
+        <div class="form-group"></div>
+    </fieldset>
+</form>
+```
+From 01-styles.css, create 02-styles.css
+- Target all fieldset and set the following rules
+ - flex display
+ - direction of flex is column
+ - justify the content at flex-start
+ - no border
+ - 0 0 2rem padding
+Final rendering (same as previously because legend tags are hidden by default)<br>
+```
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 2rem;
+}
+```
+<br>
