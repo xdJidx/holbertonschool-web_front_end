@@ -454,7 +454,7 @@ In your 13-article.html
 <div class="post-meta">
     <ul class="post-meta-list row" >
         <li class="post-meta-author">
-          <strong>Written by</strong>
+          <strong>Written by:</strong>
           <a href="#" rel="author">William Attaway</a>
         </li>
         <li class="post-meta-date">
@@ -517,7 +517,7 @@ Target the after pseudo element of the last-child on the li inside tag-list clas
   border-bottom: 0.2rem solid var(--color-light-grey);
 }
 
-.post-meta-list [class^="post-meta-"]:not(:last-child) {
+.post-meta-list [class^="post-meta-"]:last-child {
   border: none;
   margin-bottom: 3rem;
 }
