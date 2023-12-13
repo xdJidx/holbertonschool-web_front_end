@@ -104,3 +104,101 @@ fieldset {
 }
 ```
 <br>
+
+## 2. create labels and input container
+From 02-article.html, create 03-article.html and in the form which is in the comment section:
+- In the first fieldset
+ - In the first div (which has classes form-group and col-1-2)
+  - Create a label
+   - For: your-first-name
+   - Text: First Name
+  - Sibling to the label, create a <div> with the class form-field
+   - Create a span inside the div with the class form-field-container
+ - In the second div (which has classes form-group and col-1-2)
+  - Create a label
+   - For: your-last-name
+   - Text: Last Name
+  - Sibling to the label, create a <div> with the class form-field
+   - Create a span inside the div with the class form-field-container
+ - In the third div (which has classes form-group and col-2-3)
+  - Create a label
+   - For: your-email
+   - Text: Email
+  - Sibling to the label, create a <div> with the class form-field
+   - Create a span inside the div with the class form-field-container
+- In the second fieldset
+ - In the first div (which has classes form-group and col-2-3)
+  - Create a label
+   - For: your-title
+   - Text: Title
+  - Sibling to the label, create a <div> with the class form-field
+   - Create a span inside the div with the class form-field-container
+ - In the second div (which has classes form-group and col-2-3)
+  - Create a label
+   - For: your-comment
+   - Text: Comment
+  - Sibling to the label, create a <div> with the class form-field
+   - Create a span inside the div with the class form-field-container
+ - In the third div (which has class form-group)
+  - Create a <button> with the classes button and button-primary
+   - Text: Post my comment
+```
+<form action="#" method="post">
+    <fieldset>
+        <legend class="visually-hidden">Your personal information</legend>
+        <div class="form-group col-1-2">
+            <label for="your-first-name">First Name</label>
+            <div class="form-field">
+                <span class="form-field-container"></span>
+            </div>
+        </div>
+        <div class="form-group col-1-2">
+            <label for="your-last-name">Last Name</label>
+            <div class="form-field">
+                <span class="form-field-container"></span>
+            </div>
+        </div>
+        <div class="form-group col-2-3">
+            <label for="your-email">Email</label>
+            <div class="form-field">
+                <span class="form-field-container"></span>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend class="visually-hidden">Your comment</legend>
+        <div class="form-group col-2-3">
+            <label for="your-title">Title</label>
+            <div class="form-field">
+                <span class="form-field-container"></span>
+            </div>
+        </div>
+        <div class="form-group col-2-3">
+            <label for="your-comment">Comment</label>
+            <div class="form-field">
+                <span class="form-field-container"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="button button-primary">Post my comment</button>
+        </div>
+    </fieldset>
+</form>
+```
+From 02-styles.css, create 03-styles.css:
+- Target all label
+  - cursor should be pointer
+  - display as block element
+  - don’t wrap white space
+  - size of font should be 1.4rem
+  - set padding to 0 0 .5rem
+```
+label {
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    padding: 0 0 .5rem;
+}
+```
+<br>
