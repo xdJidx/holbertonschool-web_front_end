@@ -315,7 +315,7 @@ textarea {
 }
 
 input[type="text"],
-input[type="mail"] {
+input[type="email"] {
     padding-right: 3rem;
 }
 
