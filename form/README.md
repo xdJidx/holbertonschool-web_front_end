@@ -51,7 +51,7 @@ After the Tag list styles, create a new comment
 
 /* Basic form
     ============================= */
-.form {
+form {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
