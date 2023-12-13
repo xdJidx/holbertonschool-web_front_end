@@ -672,7 +672,6 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: none;
     padding: 0 0 2rem;
 }
 
@@ -681,5 +680,6 @@ label {
     display: block;
     white-space: nowrap;
     font-size: 1.4rem;
+    border: none;
     padding: 0 0 .5rem;
 }
