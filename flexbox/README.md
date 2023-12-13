@@ -360,7 +360,7 @@ Target the section-body class inside the hero-article class
 ```
 <br>
 
-## 11. Update the new hero banner
+## 12. Update the new hero banner
 In your 12-article.html file, in the Hero section
 - After the header, create a div and set its class to main-article (this div will be siblings with the Hero section header)
 - Create a div inside the main-article div and set the class to container
@@ -420,6 +420,125 @@ In your 12-styles.css:
 .post-aside {
     order: -1;
     min-width: 20%;
+}
+```
+<br>
+
+## 13. The meta list inside the aside section
+In your 13-article.html
+- Create an unordered list inside the post-meta div with the classes post-meta-list and row
+ - Create a first li with the class post-meta-author
+  - Create the HTML tag that show a stronger importance
+   - Text: Written by:
+  - Create a link
+   - Href: #
+   - Rel: author
+   - Text: William Attaway
+ - Create a second li with the class post-meta-date
+  - Create the HTML tag that show a stronger importance
+   - Text: Posted on:
+  - Use the HTML tag for date / time - Datetime: 2019-10 - Text: October 2019
+ - Create a third li with the class post-meta-tag
+  - Create the HTML tag that show a stronger importance
+   - Text: Tags:
+  - Create an unordered list with the class tag-list
+   - First li contain a link
+    - Href: #
+    - Rel: tag
+    - Text: Web Design
+   - Second li contain a link
+    - Href: #
+    - Rel: tag
+    - Text: UX
+```
+<div class="post-meta">
+    <ul class="post-meta-list row" >
+        <li class="post-meta-author">
+          <strong>Written by</strong>
+          <a href="#" rel="author">William Attaway</a>
+        </li>
+        <li class="post-meta-date">
+          <strong>Posted on:</strong>
+          <time datetime="2019-10">October 2019</time>
+        </li>
+        <li class="post-meta-tag">
+          <strong>Tags:</strong>
+          <ul class="tag-list">
+            <li><a href="#" rel="tag">Web Design</a></li>
+            <li><a href="#" rel="tag">UX</a></li>
+          </ul>
+        </li>
+    </ul>
+</div>
+```
+Update 13-styles.css with this information<br>
+Add a separator comment<br>
+Target the post-meta-list class
+- Property: flex-direction, Value: column
+Target the strong tag inside post-meta-list class
+- Property: color, Value: point to the variable color-primary
+- Property: font-size, Value: point to the variable font-size-small
+- Property: text-transform, Value: uppercase
+- Property: display, Value: block
+Target all classes that start with post-meta- inside post-meta-list class
+- Property: margin-bottom, Value: 1rem
+- Property: padding-bottom, Value: 1rem
+- Property: border-bottom, Values: 0.2rem solid and point to the color-light-grey variable
+Target the last child of all classes that start with post-meta inside post-meta-list class
+- Property: border, Value: none
+- Property: margin-bottom, Value: 3rem
+Add a separator comment
+Target the tag-list class
+- Property: padding, Value: 0
+- Property: list-style, Value: none
+Target all li inside the tag-list class
+- Property: display, Value: inline
+Target the after pseudo element on the li inside tag-list class
+- Property: content, Value: ", " (space after the comma)
+Target the after pseudo element of the last-child on the li inside tag-list class
+- Property: content, Value: empty
+```
+/* Post Meta
+    ============================= */
+.post-meta-list {
+  flex-direction: column;
+}
+
+.post-meta-list strong {
+  color: var(--color-primary);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  display: block;
+}
+
+.post-meta-list [class^="post-meta-"] {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--color-light-grey);
+}
+
+.post-meta-list [class^="post-meta-"]:not(:last-child) {
+  border: none;
+  margin-bottom: 3rem;
+}
+
+/* Tag list
+    ============================= */
+.tag-list {
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  display: inline;
+}
+
+.tag-list li::after {
+  content: ', ';
+}
+
+.tag-list li:last-child::after {
+  content: "";
 }
 ```
 <br>
