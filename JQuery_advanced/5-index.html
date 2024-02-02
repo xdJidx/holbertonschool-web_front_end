@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 5</title>
+    <!-- Load the latest version of jQuery using their code.jquery.com CDN -->
+    <!-- Use the Slim & minified version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script type="application/javascript">
+        // Create a function createFamilyTree
+        function createFamilyTree() {
+            // It should append to the body an empty table, with thead and two cells with text Firstname and Lastname, respectively
+            // It should append an empty tbody element to the table after the thead
+            $('body').append(
+                $('<table>').append(
+                    $('<thead>').append(
+                        $('<tr>').append(
+                            $('<th>').text('Firstname'),
+                            $('<th>').text('Lastname')
+                        )
+                    ),
+                    $('<tbody>')
+                )
+            );
+        }
+
+        // Create a function addNewMember
+        function addNewMember(firstName, lastName) {
+            // It appends to the body of the table a new row with three cells
+            // The first cell displays the firstName, the second cell displays the lastName
+            // The third cell displays (x)
+            const newRow = $('<tr>').append(
+                $('<td>').text(firstName),
+                $('<td>').text(lastName),
+                // On click on the third cell, it should remove the row
+                $('<td>').text('(x)').css('background-color', 'orange').click(function () {
+                    $(this).closest('tr').remove();
+                })
+            );
+
+            // Append the new row to the table body
+            $('tbody').append(newRow);
+        }
+
+        // Calls the function createFamilyTree
+        $(document).ready(function () {
+            createFamilyTree();
+
+            // Using addNewMember, generate a fake table
+            addNewMember('Guillaume', 'Salva');
+            addNewMember('Arielle', 'Snizt');
+            addNewMember('Fanette', 'Snizt');
+            addNewMember('Gerard', 'Snizt');
+            addNewMember('Victor', 'Salva');
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
