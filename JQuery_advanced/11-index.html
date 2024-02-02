@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 11</title>
+    <!-- Load the minified version of jQuery using their code.jquery.com CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <script type="application/javascript">
+        // Create a function addPostRow
+        function addPostRow(data) {
+            // It appends to the body a paragraph
+            const paragraph = $('<p>');
+
+            // The paragraph should contain a span element with the text Post created with id ID, title: TITLE, author: AUTHOR
+            const span = $('<span>').text(`Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`);
+
+            // Append the span element to the paragraph
+            paragraph.append(span);
+
+            // Append the paragraph to the body
+            $('body').append(paragraph);
+        }
+
+        // Create a function named listPosts
+        function listPosts() {
+            // It should query your local server on the posts endpoint
+            // When the server returns a 200 response, it should call the function addPostRow for each element in the response
+            // When the server is unavailable, display an alert with the message Server Error
+            $.get("http://localhost:3000/posts", function (data, status) {
+                if (status === "success") {
+                    data.forEach(function (post) {
+                        // Call the function addPostRow for each element in the response
+                        addPostRow(post);
+                    });
+                } else {
+                    // Display an alert with the message Server Error
+                    alert('Server Error');
+                }
+            });
+        }
+
+        // Create a new function buildForm
+        function buildForm() {
+            // It appends to the body a form element
+            const form = $('<form>');
+
+            // Inside the form, add a div element, with a label for author with text Author and an input of type text with id author
+            const authorDiv = $('<div>');
+            authorDiv.append($('<label>').attr('for', 'author').text('Author'));
+            authorDiv.append($('<input>').attr({ type: 'text', id: 'author' }));
+
+            // Inside the form, add a div element, with a label for title with text Title and a textarea with id title
+            const titleDiv = $('<div>');
+            titleDiv.append($('<label>').attr('for', 'title').text('Title'));
+            titleDiv.append($('<textarea>').attr('id', 'title'));
+
+            // Inside the form, add an input of type submit
+            form.append(authorDiv);
+            form.append(titleDiv);
+            form.append($('<input>').attr({ type: 'submit' }));
+
+            // When clicking on the submit button, call the function sendForm
+            form.submit(function (event) {
+                sendForm();
+                event.preventDefault();
+            });
+
+            // Append the form to the body
+            $('body').append(form);
+        }
+
+        // Create a new function sendForm
+        function sendForm() {
+            // It should add after the form, the text About to send the query to the API
+            $('form').after($('<p>').text('About to send the query to the API'));
+
+            // It should create a data object, with the title and author attributes. The values are the ones within the inputs
+            const data = {
+                title: $('#title').val(),
+                author: $('#author').val()
+            };
+
+            // It should send a POST query to your server endpoint posts with the data
+            // If the query succeed, call the function addPostRow with the data coming back from the API
+            // If the query does not succeed, it should display an alert with the message Error sending the POST query
+            $.ajax({
+                url: 'http://localhost:3000/posts',
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                success: function (postData) {
+                    addPostRow(postData);
+                },
+                error: function () {
+                    alert('Error sending the POST query');
+                }
+            });
+        }
+
+        // Call the functions listPosts and buildForm when your page loads
+        $(document).ready(function () {
+            listPosts();
+            buildForm();
+        });
+    </script>
+</body>
+
+</html>
