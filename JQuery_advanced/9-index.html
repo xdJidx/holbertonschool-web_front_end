@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 9</title>
+    <!-- Load the minified version of jQuery using their code.jquery.com CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Add a new class named loading */
+        .loading {
+            /* Set the opacity at 0.2 within that class */
+            opacity: 0.2;
+        }
+    </style>
+    <script type="application/javascript">
+        // Reuse the function addNewArticle to add new items to a list
+        function addNewArticle(id, title, snippet) {
+            // It creates an element li
+            const newListItem = $('<li>');
+            
+            // Within the li, add two paragraph elements
+            // The first paragraph contains a span tag with the following text: id -, then a b element with the title
+            newListItem.append(
+                $('<p>').append(
+                    $('<span>').text(id + ' - '),
+                    $('<b>').text(title)
+                ),
+                // The second paragraph should contain the snippet
+                $('<p>').html(snippet)
+            );
+
+            // Append the li to the ul element (created by createSearchForm)
+            $('#searchResults').append(newListItem);
+        }
+
+        // Implement a get function: create a function queryWikipedia
+        function queryWikipedia(search, offset) {
+            // Call the function displayLoading before querying the API
+            displayLoading(true);
+
+            // Add a new parameter named offset(number)
+            // By default, the offset should be set to 0
+            offset = offset || 0;
+
+            // Modify the data object to add the offset
+            const requestData = {
+                action: 'query',
+                format: 'json',
+                list: 'search',
+                srsearch: search,
+                sroffset: offset
+            };
+
+            // Perform an AJAX request to the Wikipedia API
+            $.ajax({
+                url: 'https://en.wikipedia.org/w/api.php',
+                data: requestData,
+                dataType: 'jsonp',
+                success: function (response) {
+                    // Once the API returns the value, it should remove the opacity by calling the function again
+                    displayLoading(false);
+
+                    // When you receive the response from the API, call the function buildPagination
+                    addNewArticle(1, 'Dummy Article', 'This is a dummy article for testing.'); // Adding dummy article
+                    buildPagination(response.query.totalhits, 10, offset);
+                },
+                error: function (error) {
+                    console.error('Error querying Wikipedia API:', error);
+
+                    // In case of an error, remove the loading style
+                    displayLoading(false);
+                }
+            });
+        }
+
+        // Create a new function named buildPagination
+        function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+            // It accepts three arguments numberOfItems(number), itemsPerPage(number), and currentOffset(number)
+            // When the function is called, reset the pagination list to an empty tag
+            $('#pagination').empty();
+
+            // Write a loop that will display the pagination (using the total number of items divided by the number of items per page)
+            const totalPages = Math.ceil(numberOfItems / itemsPerPage);
+            for (let i = 0; i < totalPages; i++) {
+                // For each page, create a list item
+                const pageItem = $('<li>').text(i + 1);
+
+                // Add some CSS for each item (cursor: 'pointer', 10px margin left, and bold when this is the current page)
+                pageItem.css({
+                    cursor: 'pointer',
+                    marginLeft: '10px',
+                    fontWeight: (i * itemsPerPage === currentOffset) ? 'bold' : 'normal'
+                });
+
+                // When clicking on a page number, it should call the function queryWikipedia with the right offset
+                pageItem.click(function () {
+                    queryWikipedia($('input[type="text"]').val(), i * itemsPerPage);
+                });
+
+                // Append the pageItem to the pagination list
+                $('#pagination').append(pageItem);
+            }
+        }
+
+        // Create a function: create a function createSearchForm
+        function createSearchForm() {
+            // It appends to the body:
+            // An empty input of type text without ID, name, or class
+            $('<input>').attr({ type: 'text' }).appendTo('body');
+
+            // An input of type submit
+            // When the user clicks on the submit button, it should query the function queryWikipedia with the value of the text input
+            $('<input>').attr({ type: 'submit' }).click(function () {
+                const searchText = $('input[type="text"]').val();
+                queryWikipedia(searchText);
+            }).appendTo('body');
+
+            // An empty ul element (for search results)
+            $('<ul>').attr({ id: 'searchResults' }).appendTo('body');
+
+            // Another ul element for pagination
+            $('<ul>').attr({ id: 'pagination' }).appendTo('body');
+        }
+
+        // Create a function named displayLoading
+        function displayLoading(loading) {
+            const ulElement = $('ul:first');
+
+            // If loading is true, it wraps the element with a div tag and the class loading
+            if (loading) {
+                ulElement.wrap('<div class="loading"></div>');
+            } else {
+                // If loading is false, it unwrap the ul from the div
+                ulElement.unwrap();
+            }
+        }
+
+        // Call the function createSearchForm when the page loads
+        $(document).ready(function () {
+            createSearchForm();
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
