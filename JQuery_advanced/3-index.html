@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 3</title>
+    <!-- Load the latest version of jQuery using their code.jquery.com CDN -->
+    <!-- Use the Slim & minified version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script type="application/javascript">
+        // Reuse the function named createFamilyTree
+        function createFamilyTree() {
+            // It should create a table element
+            // The head of the table should display Firstname and Lastname in two cells
+            $('body').append(
+                $('<table>').append(
+                    $('<thead>').append(
+                        $('<tr>').append(
+                            $('<th>').text('Firstname'),
+                            $('<th>').text('Lastname')
+                        )
+                    ),
+                    // The body of the table should have three rows
+                    $('<tbody>').append(
+                        // The first row should contain two cells with Guillaume and Salva
+                        $('<tr>').append(
+                            $('<td>').text('Guillaume'),
+                            $('<td>').text('Salva')
+                        ),
+                        // The second row should contain two cells with Paulette and Salva
+                        $('<tr>').append(
+                            $('<td>').text('Paulette'),
+                            $('<td>').text('Salva')
+                        ),
+                        // The third row should contain two cells with Antoine and Salva
+                        $('<tr>').append(
+                            $('<td>').text('Antoine'),
+                            $('<td>').text('Salva')
+                        )
+                    )
+                )
+            );
+        }
+
+        // Call the createFamilyTree function
+        $(document).ready(function () {
+            createFamilyTree();
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
