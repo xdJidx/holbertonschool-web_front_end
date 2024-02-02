@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 7</title>
+    <!-- Load the minified version of jQuery using their code.jquery.com CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="application/javascript">
+        // Create a function addNewArticle to add new items to a list
+        function addNewArticle(id, title, snippet) {
+            // It creates an element li
+            const newListItem = $('<li>');
+            
+            // Within the li, add two paragraph elements
+            // The first paragraph contains a span tag with the following text: id -, then a b element with the title
+            newListItem.append(
+                $('<p>').append(
+                    $('<span>').text(id + ' - '),
+                    $('<b>').text(title)
+                ),
+                // The second paragraph should contain the snippet
+                $('<p>').html(snippet)
+            );
+
+            // Append the li to the ul element (created by createSearchForm)
+            $('#searchResults').append(newListItem);
+        }
+
+        // Implement a get function: create a function queryWikipedia
+        function queryWikipedia(search) {
+            // Create a data object with attributes required to query a search using the string passed in the argument with Wikipedia
+            const requestData = {
+                action: 'query',
+                format: 'json',
+                list: 'search',
+                srsearch: search
+            };
+
+            // Perform an AJAX request to the Wikipedia API
+            $.ajax({
+                url: 'https://en.wikipedia.org/w/api.php',
+                data: requestData,
+                dataType: 'jsonp',
+                success: function (response) {
+                    // For each result returned by the API, call the function addNewArticle with the result’s pageid, title, and snippet
+                    const searchResults = response.query.search;
+                    searchResults.forEach(result => {
+                        addNewArticle(result.pageid, result.title, result.snippet);
+                    });
+                },
+                error: function (error) {
+                    console.error('Error querying Wikipedia API:', error);
+                }
+            });
+        }
+
+        // Create a form: create a function createSearchForm
+        function createSearchForm() {
+            // It appends to the body:
+            // An empty input of type text without ID, name, or class
+            $('<input>').attr({ type: 'text' }).appendTo('body');
+
+            // An input of type submit
+            // When the user clicks on the submit button, it should query the function queryWikipedia with the value of the text input
+            $('<input>').attr({ type: 'submit' }).click(function () {
+                const searchText = $('input[type="text"]').val();
+                queryWikipedia(searchText);
+            }).appendTo('body');
+
+            // An empty ul element
+            $('<ul>').attr({ id: 'searchResults' }).appendTo('body');
+        }
+
+        // Call the function createSearchForm when the page loads
+        $(document).ready(function () {
+            createSearchForm();
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
