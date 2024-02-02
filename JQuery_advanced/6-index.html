@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 6</title>
+    <!-- Load the latest version of jQuery using their code.jquery.com CDN -->
+    <!-- Use the Slim & minified version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script type="application/javascript">
+        // Reuse the function createFamilyTree
+        function createFamilyTree() {
+            // It should append to the body an empty table, with thead and two cells with text Firstname and Lastname, respectively
+            // It should append an empty tbody element to the table after the thead
+            $('body').append(
+                $('<table>').append(
+                    $('<thead>').append(
+                        $('<tr>').append(
+                            $('<th>').text('Firstname'),
+                            $('<th>').text('Lastname')
+                        )
+                    ),
+                    $('<tbody>')
+                )
+            );
+        }
+
+        // Reuse the function addNewMember
+        function addNewMember(firstName, lastName, position) {
+            // It appends to the body of the table a new row with three cells
+            // The first cell displays the firstName, the second cell displays the lastName
+            // The third cell displays (x)
+            const newRow = $('<tr>').append(
+                $('<td>').text(firstName),
+                $('<td>').text(lastName),
+                // On click on the third cell, it should remove the row
+                $('<td>').text('(x)').css('background-color', 'orange').click(function () {
+                    $(this).closest('tr').remove();
+                })
+            );
+
+            // Add the row based on the position (before or after)
+            if (position === 'before') {
+                // When position is equal to before, it should add the row at the top of the table
+                $('tbody').prepend(newRow);
+            } else {
+                // Otherwise, it should add the row at the bottom of the table
+                $('tbody').append(newRow);
+            }
+        }
+
+        // Write a function createForm
+        function createForm() {
+            // It should add before the table two input of type text
+            // It should add a select with two options as well: before and after with corresponding Before and After text
+            // It should add an input of type submit as well
+            // When the user clicks on the submit, it should call the function addNewMember with the value of the two inputs and the value of the select element
+            $('<input>').attr('type', 'text').appendTo('body');
+            $('<input>').attr('type', 'text').appendTo('body');
+
+            $('<select>').append(
+                $('<option>').val('before').text('Before'),
+                $('<option>').val('after').text('After')
+            ).appendTo('body');
+
+            $('<input>').attr('type', 'submit').click(function () {
+                const firstName = $('input[type="text"]:first').val();
+                const lastName = $('input[type="text"]:nth-of-type(2)').val();
+                const position = $('select').val();
+                addNewMember(firstName, lastName, position);
+            }).appendTo('body');
+        }
+
+        // Call the function createFamilyTree
+        createFamilyTree();
+
+        // Call the function createForm
+        createForm();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
