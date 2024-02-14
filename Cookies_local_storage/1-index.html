@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+
+  <h1>Login to the website</h1>
+
+  <input type="text" id="firstname" placeholder="Firstname">
+  <input type="email" id="email" placeholder="Email">
+  
+  <button onclick="setCookies()" id="login-btn">Log me in</button>
+
+  <h1>Cookies</h1>
+
+  <button onclick="showCookies()" id="cookie-btn">Show the cookies</button>
+
+  <script type="application/javascript">
+    function setCookies() {
+      let firstname = document.getElementById("firstname").value;
+      let email = document.getElementById("email").value;
+  
+      // Calculate expiration date for 10 days
+      let expirationDate = new Date();
+      expirationDate.setTime(expirationDate.getTime() + (10 * 24 * 60 * 60 * 1000));
+  
+      document.cookie = `firstname=${firstname}; expires=${expirationDate.toUTCString()}; path=/`;
+      document.cookie = `email=${email}; expires=${expirationDate.toUTCString()}; path=/`;
+    }
+  
+    function showCookies() {
+      const paragraph = document.createElement('p');
+      paragraph.innerHTML = `Cookies: ${document.cookie}`;
+  
+      document.body.appendChild(paragraph);
+    }
+  </script>
+  
+
+</body>
+</html>
