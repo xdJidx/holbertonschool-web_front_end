@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      cursor: pointer;
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+    p {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<script type="application/javascript">
+  // Available items
+  const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+  // Check if local storage is available
+  if (typeof(Storage) === "undefined") {
+    alert("Sorry, your browser does not support Web storage. Try again with a better one.");
+  } else {
+    // Call functions to set up the application
+    createStore();
+    displayCart();
+  }
+
+  // Function to add item to cart
+  function addItemToCart(item) {
+    localStorage.setItem(item, true);
+    displayCart();
+  }
+
+  // Function to create the store and display available items
+  function createStore() {
+    const ul = document.createElement('ul');
+    document.body.appendChild(ul);
+
+    availableItems.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      li.addEventListener('click', () => addItemToCart(item));
+      ul.appendChild(li);
+    });
+  }
+
+  // Function to display the cart
+  function displayCart() {
+    const cartItems = Object.keys(localStorage).filter(key => localStorage.getItem(key) === "true").length;
+
+    // Clear previous message
+    const previousMessage = document.getElementById('previousMessage');
+    if (previousMessage) {
+      previousMessage.parentNode.removeChild(previousMessage);
+    }
+
+    // Display new message
+    if (cartItems > 0) {
+      const p = document.createElement('p');
+      p.id = 'previousMessage';
+      p.textContent = `You previously had ${cartItems} item(s) in your cart.`;
+      document.body.appendChild(p);
+    }
+  }
+</script>
+
+</body>
+</html>
